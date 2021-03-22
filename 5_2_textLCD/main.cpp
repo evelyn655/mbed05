@@ -50,7 +50,7 @@ int main()
             led = !led;             // toggle led
             for (int i=30; i>0; --i) {  //counter display
                 lcd.locate(7,1);
-                lcd.printf("%i", i);
+                lcd.printf("%2i", i);
                 ThisThread::sleep_for(1s);
             }            
       }
